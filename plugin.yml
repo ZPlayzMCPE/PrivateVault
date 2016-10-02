@@ -1,0 +1,42 @@
+name: PrivateVaults
+main: Daniktheboss
+authors: Daniktheboss
+version: 1.0.0
+api: 2.0.0
+
+commands:
+  player:
+    description: Main PrivateVaults command
+    usage: /v [vault number]
+    permission: vault.use
+  admin:
+    description: Allow players to open other players vaults
+    usage: /v [player] [vault] 
+    permission: vault.admin
+  status:
+    description: Allow players to open other players vaults
+    usage: /v status
+    permission: vault.status.me
+  playerstatus:
+    description: Allow admins to check status of other players
+    usage: /v status [player] 
+    permission: vault.status.other
+    
+
+permissions:
+  vault:
+    description: main command for privatevaults
+    children:
+      vault.use:
+        description: Open your vaults
+        default: true
+      vault.status:
+        description: Main command for status
+        children:
+          vault.status.me:
+            description: Check your vault status
+            default: true
+          vault.status.other
+            description: Check vault status of others
+      vault.admin:
+        description: Open other players vaults 

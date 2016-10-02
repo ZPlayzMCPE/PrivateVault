@@ -1,0 +1,13 @@
+#Config file for PlayerVault
+
+#Max vaults a player can have
+max-vaults: 3
+
+#Allow players to buy extra vaults?
+extra-vault: false
+
+#How much extra vaults?
+max-extra-vault: 2
+
+#If player has more then 3 vaults, And extra-vaults is true, he will be charged this amount every time he opens extra vaults.
+extra-vault-cost: 5
