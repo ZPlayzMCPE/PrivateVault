@@ -2,7 +2,7 @@ name: PrivateVaults
 main: PrivateVaults\main
 authors: Daniktheboss
 version: 1.0.0
-api: 2.0.0
+api: [3.0.0-ALPHA6, 3.0.1]
 
 commands:
   pv:
